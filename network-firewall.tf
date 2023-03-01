@@ -8,7 +8,7 @@ resource "google_compute_firewall" "allow-http" {
     protocol = "tcp"
     ports    = ["80"]
   }
-  target_tags = ["http"]
+  target_tags   = ["http"]
   source_ranges = ["0.0.0.0/0"]
 }
 
@@ -20,7 +20,7 @@ resource "google_compute_firewall" "allow-https" {
     protocol = "tcp"
     ports    = ["443"]
   }
-  target_tags = ["https"]
+  target_tags   = ["https"]
   source_ranges = ["0.0.0.0/0"]
 }
 
@@ -32,7 +32,7 @@ resource "google_compute_firewall" "allow-ssh" {
     protocol = "tcp"
     ports    = ["22"]
   }
-  target_tags = ["ssh"]
+  target_tags   = ["ssh"]
   source_ranges = ["0.0.0.0/0"]
 }
 
@@ -44,6 +44,6 @@ resource "google_compute_firewall" "allow-rdp" {
     protocol = "tcp"
     ports    = ["3389"]
   }
-  target_tags = ["rdp"]
+  target_tags   = ["rdp"]
   source_ranges = ["0.0.0.0/0"]
 }
