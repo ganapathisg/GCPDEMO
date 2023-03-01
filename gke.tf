@@ -1,5 +1,5 @@
 #provider "google" {
- # credentials = file("/loginkey.json")
+# credentials = file("/loginkey.json")
 #}
 
 module "gke_auth" {
